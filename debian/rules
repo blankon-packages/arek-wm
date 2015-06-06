@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with autoreconf
+
+override_dh_autoreconf:
+	dh_autoreconf ./autogen.sh
+
+override_dh_builddeb:
+	dh_builddeb -- -Zxz
+
+#override_dh_install:
+#	dh_install --fail-missing
+
+#override_dh_strip:
+#	dh_strip --dbg-package=arek-wm-dbg

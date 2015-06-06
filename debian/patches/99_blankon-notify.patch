@@ -1,0 +1,30 @@
+diff -Naur gala-0.2.0.460.31.orig/data/gala.css gala-0.2.0.460.31/data/gala.css
+--- gala-0.2.0.460.31.orig/data/gala.css	2015-03-31 03:32:07.000000000 +0700
++++ gala-0.2.0.460.31/data/gala.css	2015-04-10 13:06:09.310910000 +0700
+@@ -19,12 +19,11 @@
+ 
+ .gala-notification {
+ 	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+-	background-color: rgb(2434, 2434, 2434);
++	background: rgba(26, 26, 26, 0.98);
+ 	border: 1px solid rgba(0, 0, 0, 0.3);
+ 	border-radius: 4px;
+ }
+ 
+ .gala-notification .title, .gala-notification .label {
+-    color: #333;
++    color: #ccc;
+ }
+-
+diff -Naur gala-0.2.0.460.31.orig/data/org.pantheon.desktop.gala.gschema.xml.in.in gala-0.2.0.460.31/data/org.pantheon.desktop.gala.gschema.xml.in.in
+--- gala-0.2.0.460.31.orig/data/org.pantheon.desktop.gala.gschema.xml.in.in	2015-03-31 03:32:07.000000000 +0700
++++ gala-0.2.0.460.31/data/org.pantheon.desktop.gala.gschema.xml.in.in	2015-04-21 00:24:19.619512870 +0700
+@@ -148,7 +148,7 @@
+ 			<_description>When true, instead of having independent titlebars, modal dialogs appear attached to the titlebar of the parent window and are moved together with the parent window.</_description>
+ 		</key>
+ 		<key type="s" name="button-layout">
+-			<default>'close:maximize'</default>
++			<default>':minimize,maximize,close'</default>
+ 			<_summary>Arrangement of buttons on the titlebar</_summary>
+ 			<_description>Arrangement of buttons on the titlebar. The value should be a string, such as "menu:minimize,maximize,spacer,close"; the colon separates the left corner of the window from the right corner, and the button names are comma-separated. Duplicate buttons are not allowed. Unknown button names are silently ignored so that buttons can be added in future metacity versions without breaking older versions. A special spacer tag can be used to insert some space between two adjacent buttons.</_description>
+ 		</key>
