@@ -1,3 +1,13 @@
+arek-wm (0.1-0blankon2) tambora; urgency=medium
+
+  * edit debian/control:
+    - XSBC-Original-Maintainer: Jente Hidskes <hjdskes@gmail.com>
+  * edit debian/copyright:
+    - Files: *
+    - Files: debian/*
+
+ -- Mijortsa <azis.astrojim@surabaya.di.blankon.in>  Sat, 06 Jun 2015 19:00:53 +0700
+
 arek-wm (0.1-0blankon1) tambora; urgency=medium
 
   * New Release
